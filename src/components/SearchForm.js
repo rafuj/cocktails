@@ -15,7 +15,7 @@ const SearchForm = () => {
 
   return (
     <section className="section search">
-      <form className="search-form">
+      <form className="search-form" onSubmit={(e) => e.preventDefault()}>
         <div className="form-control">
           <label htmlFor="name">Search Your Favorite Cocktail</label>
           <input
